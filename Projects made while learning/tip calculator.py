@@ -1,0 +1,7 @@
+total=float(input("Enter the total cost : "))
+tip=int(input("Enter the tip percent Ex 10 , 15 or 20 : "))
+number=int(input("Enter the number of people for the bill to be shared among : "))
+tip_amount=(total*tip/100)
+calculation=((total + tip_amount)/number)
+calculation=round(calculation, 2)
+print(f"The tip amount is {tip_amount}$.You will have to pay {calculation} $")
